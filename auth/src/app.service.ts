@@ -18,6 +18,10 @@ export class AppService {
     },
   ];
 
+  getHello(): string {
+    return 'Hello World!';
+  }
+
   getUser(getUserRequest: GetUserRequest): string {
     return this.users.find((user) => user.userId === getUserRequest.userId);
   }
